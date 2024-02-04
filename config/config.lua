@@ -1,6 +1,6 @@
 Config = {}
 Config.RequireJob = true                       -- do you need a mech job to use parts?
-Config.FuelResource = 'LegacyFuel'             -- supports any that has a GetFuel() and SetFuel() export
+Config.FuelResource = 'ps-fuel'                -- supports any that has a GetFuel() and SetFuel() export
 
 Config.PaintTime = 5                           -- how long it takes to paint a vehicle in seconds
 Config.ColorFavorites = false                  -- add your own colors to the favorites menu (see bottom of const.lua)
@@ -10,7 +10,7 @@ Config.NitrousUsage = 0.1                      -- how much nitrous is used per f
 
 Config.UseDistance = true                      -- enable/disable saving vehicle distance
 Config.UseDistanceDamage = true                -- damage vehicle engine health based on vehicle distance
-Config.UseWearableParts = true                 -- enable/disable wearable parts
+Config.UseWearableParts = false                -- enable/disable wearable parts
 Config.WearablePartsChance = 1                 -- chance of wearable parts being damaged while driving if enabled
 Config.WearablePartsDamage = math.random(1, 2) -- how much wearable parts are damaged when damaged if enabled
 Config.DamageThreshold = 25                    -- how worn a part needs to be or below to apply an effect if enabled
